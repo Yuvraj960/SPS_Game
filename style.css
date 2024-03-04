@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background: linear-gradient(180deg, #59D5E0, #387ADF);
+}
+
+.game {
+  width: 50vw;
+  padding: 20px;
+  margin-top: calc(50vh - 290px);
+  margin-left: calc(50vw - 25vw);
+}
+
+.headings {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h1.headings {
+  font-size: 3.5rem;
+}
+
+.points_container {
+  text-align: center
+}
+
+.gobtn {
+  font-size: 2rem;
+  padding: 5px 10px;
+  width: 100px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.gobtn:hover {
+  background-color: #280274;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.8s;
+}
+
+#block-point {
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.point_container {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.point_container:active {
+  border: none;
+  outline: none;
+}
+
+#point {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.point {
+  font-size: 2rem;
+}
+
+#choices {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.choice {
+  margin: 0 10px;
+}
+
+.choice button {
+  font-size: 2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.choice button#stone {
+  background-color: #F72798;
+}
+.choice button#stone:hover {
+  background-color: #FF8080;
+}
+
+.choice button#paper {
+  background-color: #2D9596;
+}
+.choice button#paper:hover {
+  background-color: #74E291;
+}
+
+.choice button#scissor {
+  background-color: #FC6736;
+}
+.choice button#scissor:hover {
+  background-color: #FFA447;
+}
+
+#chosen {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chosen h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
